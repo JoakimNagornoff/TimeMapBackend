@@ -24,7 +24,8 @@ const shifts: Shift[] = [
 ];
 
 export const getShifts = () => {
-  return shifts.filter((shift) => shift.available);
+  const filteredShifts = shifts.filter((shift) => shift.available);
+  return filteredShifts;
 };
 
 export const applyToShift = (shiftId: string) => {
